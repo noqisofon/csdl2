@@ -14,11 +14,11 @@ _CSDL2_BEGIN
 
 
 SDL::SDL(std::uint32_t flags) {
-  std::int32_t answer = ::SDL_Init( flags );
+    std::int32_t answer = ::SDL_Init( flags );
 }
 
 SDL::~SDL() {
-  ::SDL_Quit();
+    ::SDL_Quit();
 }
 
 

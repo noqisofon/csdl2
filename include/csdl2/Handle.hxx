@@ -11,8 +11,8 @@ template <class _Struct>
 class Handle {
 public:
     /*!
-   *
-   */
+    *
+    */
     Handle(_Struct* const ptr)
         : handle_(ptr)
         , created_(false)
@@ -21,29 +21,35 @@ public:
     }
 
     /*!
-   *
-   */
-    _Struct* getHandle() const { return handle_; }
+    *
+    */
+    _Struct* getHandle() const {
+        return handle_;
+    }
 
     /*!
-   *
-   */
+    *
+    */
     virtual bool create() = 0;
 
     /*!
-   *
-   */
+    *
+    */
     virtual void destroy() = 0;
 
     /*!
-   *
-   */
-    bool isCreated() const { return created_; }
+    *
+    */
+    bool isCreated() const {
+        return created_;
+    }
 
     /*!
-   *
-   */
-    bool isDestroied() const { return destroied_; }
+    *
+    */
+    bool isDestroied() const {
+        return destroied_;
+    }
 
 protected:
     _Struct* handle_;

@@ -10,14 +10,14 @@ _CSDL2_BEGIN
 
 
 struct Point {
-  std::int32_t x;
-  std::int32_t y;
+    std::int32_t x;
+    std::int32_t y;
 
-  Point();
-  Point(std::int32_t x, std::int32_t y);
+    Point();
+    Point(std::int32_t x, std::int32_t y);
 
-  void copyTo(SDL_Point * const raw_point);
-  void assign(std::int32_t x, std::int32_t y);
+    void copyTo(SDL_Point * const raw_point);
+    void assign(std::int32_t x, std::int32_t y);
 };
 
 

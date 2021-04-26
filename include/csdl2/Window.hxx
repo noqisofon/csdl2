@@ -15,28 +15,28 @@ class Size;
 class Window : public Handle<SDL_Window> {
 public:
     /*!
-   *
-   */
+    *
+    */
     Window(std::string& title, std::uint32_t width, std::uint32_t height);
 
     /*!
-   *
-   */
+    *
+    */
     ~Window();
 
     /*!
-   *
-   */
+    *
+    */
     virtual bool create();
 
     /*!
-   *
-   */
+    *
+    */
     virtual void destroy();
 
     /*!
-   *
-   */
+    *
+    */
     Size getSize();
 
 private:

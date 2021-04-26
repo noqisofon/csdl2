@@ -20,7 +20,9 @@ Window::Window(std::string& title, std::uint32_t width, std::uint32_t height)
 {
 }
 
-Window::~Window() { destroy(); }
+Window::~Window() {
+    destroy();
+}
 
 bool Window::create()
 {

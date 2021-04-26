@@ -19,13 +19,13 @@ Point::Point(std::int32_t x, std::int32_t y): x(x), y(y) {
 }
 
 void Point::copyTo(SDL_Point *const raw_point) {
-  raw_point->x = x;
-  raw_point->y = y;
+    raw_point->x = x;
+    raw_point->y = y;
 }
 
 void Point::assign(std::int32_t x, std::int32_t y) {
-  this->x = x;
-  this->y = y;
+    this->x = x;
+    this->y = y;
 }
 
 _CSDL2_END

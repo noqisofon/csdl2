@@ -16,25 +16,25 @@
 _CSDL2_BEGIN
 
 Color::Color()
-  : red(0)
-  , blue(0)
-  , green(0)
-  , alpha(255)
+    : red(0)
+    , blue(0)
+    , green(0)
+    , alpha(255)
 {
 }
 Color::Color(std::uint8_t r, std::uint8_t b, std::uint8_t g, std::uint8_t a)
-  : red(r)
-  , blue(b)
-  , green(g)
-  , alpha(255)
+    : red(r)
+    , blue(b)
+    , green(g)
+    , alpha(255)
 {
 }
 
 void Color::assign(std::uint8_t r, std::uint8_t b, std::uint8_t g, std::uint8_t a) {
-  red = r;
-  blue = b;
-  green = g;
-  alpha = a;
+    red = r;
+    blue = b;
+    green = g;
+    alpha = a;
 }
 
 _CSDL2_END
