@@ -5,6 +5,7 @@ set(srcs
   Renderer.cpp
   SDL.cpp
   Size.cpp
+  Surface.cpp
   Window.cpp)
 
 add_library(csdl2 STATIC ${srcs})
