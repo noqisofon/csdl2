@@ -2,9 +2,9 @@
 #include <cstdint>
 
 #ifdef _MSC_VER
-#   include <SDL.h>
+    #include <SDL.h>
 #else
-#   include <SDL2/SDL.h>
+    #include <SDL2/SDL.h>
 #endif /* def _MSC_VER */
 
 #include "csdl2/csdl2_internal.h"
@@ -18,8 +18,7 @@ Rect::Rect()
     : x(0)
     , y(0)
     , width(0)
-    , height(0)
-{
+    , height(0) {
 }
 Rect::Rect(std::int32_t _x,
            std::int32_t _y,
@@ -28,15 +27,13 @@ Rect::Rect(std::int32_t _x,
     : x(_x)
     , y(_y)
     , width(_width)
-    , height(_height)
-{
+    , height(_height) {
 }
-Rect::Rect(const Point& point, const Size& size)
+Rect::Rect(const Point &point, const Size &size)
     : x(point.x)
     , y(point.y)
     , width(size.width)
-    , height(size.height)
-{
+    , height(size.height) {
 }
 
 void Rect::copyTo(SDL_Rect *const raw_rect) {

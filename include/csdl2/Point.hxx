@@ -16,7 +16,7 @@ struct Point {
     Point();
     Point(std::int32_t x, std::int32_t y);
 
-    void copyTo(SDL_Point * const raw_point);
+    void copyTo(SDL_Point *const raw_point);
     void assign(std::int32_t x, std::int32_t y);
 };
 

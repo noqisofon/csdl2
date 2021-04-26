@@ -13,17 +13,16 @@ public:
     /*!
     *
     */
-    Handle(_Struct* const ptr)
+    Handle(_Struct *const ptr)
         : handle_(ptr)
         , created_(false)
-        , destroied_(false)
-    {
+        , destroied_(false) {
     }
 
     /*!
     *
     */
-    _Struct* getHandle() const {
+    _Struct *getHandle() const {
         return handle_;
     }
 
@@ -52,7 +51,7 @@ public:
     }
 
 protected:
-    _Struct* handle_;
+    _Struct *handle_;
 
     bool created_;
     bool destroied_;

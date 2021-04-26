@@ -2,9 +2,9 @@
 #include <cstdint>
 
 #ifdef _MSC_VER
-#include <SDL.h>
+    #include <SDL.h>
 #else
-#include <SDL2/SDL.h>
+    #include <SDL2/SDL.h>
 #endif /* def _MSC_VER */
 
 #include "csdl2/csdl2_internal.h"

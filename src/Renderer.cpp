@@ -3,9 +3,9 @@
 #include <memory>
 
 #ifdef _MSC_VER
-#   include <SDL.h>
+    #include <SDL.h>
 #else
-#   include <SDL2/SDL.h>
+    #include <SDL2/SDL.h>
 #endif /* def _MSC_VER */
 
 #include "csdl2/csdl2_internal.h"
@@ -18,21 +18,19 @@
 
 _CSDL2_BEGIN
 
-Renderer::Renderer(std::shared_ptr<Window>& window, std::int32_t index,
+Renderer::Renderer(std::shared_ptr<Window> &window, std::int32_t index,
                    std::uint32_t flags)
     : Handle(NULL)
     , window_(window)
     , index_(index)
-    , flags_(flags)
-{
+    , flags_(flags) {
 }
 
 Renderer::~Renderer() {
     destroy();
 }
 
-bool Renderer::create()
-{
+bool Renderer::create() {
     handle_ = ::SDL_CreateRenderer(window_->getHandle(), index_, flags_);
     if (handle_ == NULL) {
     } else {
@@ -41,8 +39,7 @@ bool Renderer::create()
     return created_;
 }
 
-void Renderer::destroy()
-{
+void Renderer::destroy() {
     if (handle_) {
         ::SDL_DestroyRenderer(handle_);
         handle_ = NULL;
@@ -62,7 +59,7 @@ void Renderer::setRenderDrawColor(std::uint8_t red, std::uint8_t green, std::uin
                               alpha );
 }
 
-void Renderer::setRenderDrawColor(Color& draw_color) {
+void Renderer::setRenderDrawColor(Color &draw_color) {
     if ( !handle_ ) {
         return ;
     }
@@ -97,8 +94,7 @@ void Renderer::present() {
     ::SDL_RenderPresent( handle_ );
 }
 
-void Renderer::clear()
-{
+void Renderer::clear() {
     if ( !handle_ ) {
         return ;
     }

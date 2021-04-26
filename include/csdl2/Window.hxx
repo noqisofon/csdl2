@@ -17,7 +17,7 @@ public:
     /*!
     *
     */
-    Window(std::string& title, std::uint32_t width, std::uint32_t height);
+    Window(std::string &title, std::uint32_t width, std::uint32_t height);
 
     /*!
     *
@@ -33,6 +33,11 @@ public:
     *
     */
     virtual void destroy();
+
+    /*!
+     *
+     */
+    Point getPosition();
 
     /*!
     *

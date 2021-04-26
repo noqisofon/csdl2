@@ -42,7 +42,7 @@ public:
     /*!
      *
      */
-    void setRenderDrawColor(Color& draw_color);
+    void setRenderDrawColor(Color &draw_color);
 
     /*!
      *

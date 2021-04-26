@@ -22,7 +22,7 @@ struct Rect {
          std::int32_t _y,
          std::uint32_t _width,
          std::uint32_t _height);
-    Rect(const Point& point, const Size& size);
+    Rect(const Point &point, const Size &size);
 
     /*!
      *
