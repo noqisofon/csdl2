@@ -1,0 +1,22 @@
+
+--style=java
+
+--indent=spaces=4
+
+--attach-namespaces
+
+--attach-classes
+
+# --attach-extern-c
+
+--attach-closing-while
+
+--indent-cases
+
+--indent-namespaces
+
+--indent-preproc-block
+
+--align-pointer=name
+
+--add-braces
